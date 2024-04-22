@@ -18,7 +18,7 @@ async function startProgram() {
 
 	setMainLed({ r: 21, g: 52, b: 80 });
 
-	await speak("Hello Square", true);
+	await speak("Lebron over Jordan any day", true);
 
 	await delay(1);
 
@@ -26,7 +26,7 @@ async function startProgram() {
 
 		setMainLed(getRandomColor());
 
-		await Sound.8Bit.Explosion.play(true);
+		await Sound.Sports.play(true);
 
 		await roll((getHeading() + 90), 60, 1);
 
