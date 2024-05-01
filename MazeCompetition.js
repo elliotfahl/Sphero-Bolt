@@ -7,8 +7,9 @@
 
 async function startProgram() {
 	// Programmer: Elliot Fahl - Start Text & Audio Checkpoint Commit - Date:
-
-
+	await speak("Start", true);
+	await scrollMatrixText('start', {r: 66, g: 25, b: 90}, 30, true)
+	
 
 	// Programmer:             - Blue LED Checkpoint Commit - Date:
 
