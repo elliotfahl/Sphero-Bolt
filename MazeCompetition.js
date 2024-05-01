@@ -10,12 +10,14 @@ async function startProgram() {
 	
 	await speak("Start", true);
 	await scrollMatrixText('start', {r: 66, g: 25, b: 90}, 30, true)
-	
+	await roll((getHeading() + 0), 60, 3);
+	await delay (2);
 
 	// Programmer: Elliot Fahl - Blue LED Checkpoint Commit - Date:
 	
-	setMainLed({ r: 0, g: 0, b: 255 });
-
+	setMainLed({ r: 0, g: 0, b: 255});
+	await roll((getHeading() + 90), 60, 4);
+	await delay (2);
 
 	// Programmer: 			   - Sound One Checkpoint Commit - Date:
 
