@@ -15,10 +15,10 @@ async function startProgram() {
 
 	// Programmer: Elliot Fahl - Blue LED Checkpoint Commit - Date:
 	
-	setMainLed({ r: 0, g: 0, b: 255});
-	await roll((getHeading() + 90), 60, 4);
-	await delay (2);
-
+	await roll((getHeading() + 0), 75, 2);
+	await delay(1);
+	setMainLed({ r: 0, g: 0, b: 100 });
+	
 	// Programmer: 			   - Sound One Checkpoint Commit - Date:
 
 
